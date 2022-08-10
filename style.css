@@ -45,30 +45,20 @@ body{
   color: rosybrown;
 }
 
-.small-circle {
+.circle {
   height: 25rem;
   width: 25rem;
   border-right: .4rem solid cadetblue;
   border-left: .4rem solid cadetblue;
   border-radius: 50%;
-  margin: 5rem auto;
   transform: rotate(45deg);
   position: absolute;
-  z-index: -1;
-  transition: roll .4s ease;  
+  z-index: -1; 
 }
 
-.big-circle {
+#big-circle {
   height: 35rem;
   width: 35rem;
-  border-right: .4rem solid cadetblue;
-  border-left: .4rem solid cadetblue;
-  border-radius: 50%;
-  margin: 5rem auto;
-  transform: rotate(135deg);
-  position: absolute;
-  z-index: -1;
-  transition: roll .4s ease;
 }
 
 #toasts {
@@ -95,10 +85,6 @@ body{
 
 .toast.personal {
   color: green;
-}
-
-.toast.study {
-  color:  violet;
 }
 
 .toast.hobby {

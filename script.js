@@ -3,7 +3,7 @@ const toasts = document.querySelector('#toasts')
 
 const messages = ['Call Somebody', 'Send E-mail', 'Visit Family', 'Refresh Buy List', 'Study', 'Dinners Time', 'Coffe Brake', 'Listen Music', 'Back Home']
 
-const types = ['work', 'personal', 'study', 'hobby']
+const types = ['work', 'personal', 'hobby']
 
 button.addEventListener('click', () => createNotification())
 
