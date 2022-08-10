@@ -3,13 +3,16 @@ const toasts = document.querySelector('#toasts')
 
 const messages = ['Call Somebody', 'Send E-mail', 'Visit Family', 'Refresh Buy List', 'Study', 'Dinners Time', 'Coffe Brake', 'Listen Music', 'Back Home']
 
-button.addEventListener('click', createNotification)
+const types = ['work', 'personal', 'study', 'hobby']
 
-function createNotification () {
+button.addEventListener('click', () => createNotification())
+
+function createNotification (message = null, type = null) {
   const notif = document.createElement('div')
   notif.classList.add('toast')
-  
-  notif.innerText = getRandomMessage()
+  notif.classList.add(type ? type : getRandomType())
+
+  notif.innerText = message ? message : getRandomMessage()
 
   toasts.appendChild(notif)
 
@@ -18,6 +21,10 @@ function createNotification () {
   }, 3000)
 }
 
-function getRandomMessage () {
+function getRandomMessage() {
   return messages[Math.floor(Math.random() * messages.length)]
+}
+
+function getRandomType() {
+  return types[Math.floor(Math.random() * types.length)]
 }

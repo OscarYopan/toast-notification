@@ -81,11 +81,26 @@ body{
 }
 
 .toast {
-  background-color: white;
-  color: cadetblue;
+  background-color: white;  
   font-weight: bold;
   font-size: 1.6rem;
   border-radius: .5rem;
   padding: 1rem 2rem;
   margin: .5rem;
+}
+
+.toast.work {
+  color: blue;
+}
+
+.toast.personal {
+  color: green;
+}
+
+.toast.study {
+  color:  violet;
+}
+
+.toast.hobby {
+  color: red;
 }
