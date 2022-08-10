@@ -7,15 +7,85 @@
 
 /*Default*/
 html{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: rosybrown;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+
+.btn {
+  color: cadetblue;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  color: rosybrown;
+}
+
+.small-circle {
+  height: 25rem;
+  width: 25rem;
+  border-right: .4rem solid cadetblue;
+  border-left: .4rem solid cadetblue;
+  border-radius: 50%;
+  margin: 5rem auto;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: -1;
+  transition: roll .4s ease;  
+}
+
+.big-circle {
+  height: 35rem;
+  width: 35rem;
+  border-right: .4rem solid cadetblue;
+  border-left: .4rem solid cadetblue;
+  border-radius: 50%;
+  margin: 5rem auto;
+  transform: rotate(135deg);
+  position: absolute;
+  z-index: -1;
+  transition: roll .4s ease;
+}
+
+#toasts {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+}
+
+.toast {
+  background-color: white;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  margin: .5rem;
 }
